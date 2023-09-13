@@ -60,6 +60,7 @@ resource "aws_route_table" "private_route_table_az1" {
 resource "aws_route_table_association" "private_subnet_az1_route_table_az1_association" {
   subnet_id         =
   route_table_id    =
+}
 
 # Create Private Route Table AZ2 and add route through Nat Gateway AZ2
 resource "aws_route_table" "private_route_table_az2" {
