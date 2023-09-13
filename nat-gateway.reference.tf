@@ -1,6 +1,6 @@
-# Allocate Elastic IP. (This EIP will be used for the nat-gateway in the Public Subnet AZ1).
+# Allocate Elastic IP. (This EIP will be used for the nat-gateway in the Public Subnet AZ1)
 resource "aws_eip" "eip_for_nat_gateway_az1" {
-  vpc    =
+  domain    =
 
   tags   = {
     Name =
@@ -9,7 +9,7 @@ resource "aws_eip" "eip_for_nat_gateway_az1" {
 
 # Allocate Elastic IP. (This EIP will be used for the nat-gateway in the Public Subnet AZ2)
 resource "aws_eip" "eip_for_nat_gateway_az2" {
-  vpc    =
+  domain    =
 
   tags   = {
     Name =
@@ -52,7 +52,7 @@ resource "aws_route_table" "private_route_table_az1" {
   }
 
   tags   = {
-    Name = "Private Route Table AZ1"
+    Name =
   }
 }
 
@@ -61,7 +61,7 @@ resource "aws_route_table_association" "private_subnet_az1_route_table_az1_assoc
   subnet_id         =
   route_table_id    =
 
-# Create Private Route Table AZ2 and add route through Nat Gateway az2
+# Create Private Route Table AZ2 and add route through Nat Gateway AZ2
 resource "aws_route_table" "private_route_table_az2" {
   vpc_id            =
 
