@@ -1,4 +1,4 @@
-# Allocate Elastic IP. (This EIP will be used for the nat-gateway in the Public Subnet AZ1)
+# Allocate Elastic IP. (This EIP will be used for the Nat-Gateway in the Public Subnet AZ1)
 resource "aws_eip" "eip_for_nat_gateway_az1" {
   domain    =
 
@@ -7,7 +7,7 @@ resource "aws_eip" "eip_for_nat_gateway_az1" {
   }
 }
 
-# Allocate Elastic IP. (This EIP will be used for the nat-gateway in the Public Subnet AZ2)
+# Allocate Elastic IP. (This EIP will be used for the Nat-Gateway in the Public Subnet AZ2)
 resource "aws_eip" "eip_for_nat_gateway_az2" {
   domain    =
 
@@ -38,8 +38,8 @@ resource "aws_nat_gateway" "nat_gateway_az2" {
     Name =
   }
 
-  # to ensure proper ordering, it is recommended to add an explicit dependency on the internet gateway for the vpc.
-  depends_on = [var.internet_gateway]
+  # to ensure proper ordering, it is recommended to add an explicit dependency on the Internet Gateway for the VPC.
+  depends_on =
 }
 
 # Create Private Route Table AZ1 and add route through Nat Gateway AZ1
