@@ -1,4 +1,3 @@
-# AWS DynamoDB Table for Terraform Locking
 aws dynamodb create-table \
     --table-name terraform-locks \
     --attribute-definitions AttributeName=LockID,AttributeType=S \
