@@ -27,8 +27,8 @@ This demo covers everything from start to finish. You will learn how to set up y
 
 All of this will be done from scratch in Visual Studio Code, giving you a hands-on experience in writing and managing Terraform code. In the final steps, you will initialize Terraform, deploy the VPC, and  NAT Gateway module, and when finished destroy the resources gracefully using theTerraform destroy command.
 
-⭐ This structured approach ensures you will have a complete understanding of the process from beginning to end.
+This structured approach ensures you will have a complete understanding of the process from beginning to end.
 
 ### Video Demo
 ------------------
-- [The Complete Guide: Creating and Deploying Reusable Amazon VPC & Nat Gateway Modules with Terraform](https://www.youtube.com/watch?v=tb7a0QXUaOM)
+🔗 [The Complete Guide: Creating and Deploying Reusable Amazon VPC & Nat Gateway Modules with Terraform](https://www.youtube.com/watch?v=tb7a0QXUaOM)
