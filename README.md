@@ -143,4 +143,5 @@ These steps are involved in creating and deploying a reusable NAT Gateway module
 ## <span style="color:purple">Task 7: Destroy Resources with Terraform</span>
 
 
+
 You will use Terraform's destroy command to efficiently dismantle your AWS infrastructure, including the VPC and NAT Gateway modules. This command allows you to gracefully tear down resources created using Terraform, ensuring that all associated resources are removed cleanly and securely.
